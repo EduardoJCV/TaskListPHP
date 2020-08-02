@@ -8,17 +8,6 @@ require 'config/parameters.php';
 $controller = new TaskController();
 $taskList = [];
 
-// if ( isset( $_GET['action'] ) ) {
-//     if ( method_exists( $controller, $_GET['action'] ) ) {
-//         $action = $_GET['action'];
-//         if ( isset($_GET['param']) ) {
-//             $controller->$action( $_GET['param'] );
-//         }else{
-//             $controller->$action();
-//         }
-//     }
-// }
-
 $taskList = $controller->obtenerTodas();
 
 ?>
